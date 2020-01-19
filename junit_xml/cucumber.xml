@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="89.919831">
+<testcase classname="Create Politician Test" name="Validate Politician getting Created" time="19.135667">
+<system-out><![CDATA[Given User Opens browser....................................................passed
+Then User is on Registation Page............................................passed
+Then User enters the details "John Doe" and "UK" and "02/07/2002" and "https://www.google.com/" and "Low".passed
+Then User clicks on Save button.............................................passed
+Then User gets a popup user being added with "John Doe".....................passed
+Then User accepts the popup and close the browser...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create Politician Test" name="Validate Politician getting Created 2" time="15.577309">
+<failure message="junit.framework.AssertionFailedError: Name Is not saved correctly expected:&lt;true&gt; but was:&lt;false&gt;&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.failNotEquals(Assert.java:329)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:78)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:174)&#13;&#10;&#9;at amazonaws.qa.StepDefinitions.PoliticianPageSteps.user_gets_a_popup_user_being_added_with(PoliticianPageSteps.java:47)&#13;&#10;&#9;at ✽.Then User gets a popup user being added with &quot;Lopa&quot;(C:/Users/44744/eclipse-workspace/AmazonAwsBDDFramework/src/main/java/amazonaws/qa/features/addPoliticians.feature:9)&#13;&#10;"><![CDATA[Given User Opens browser....................................................passed
+Then User is on Registation Page............................................passed
+Then User enters the details "Lopa" and "UK" and "02/07/2002" and "https://www.google.com/" and "Low".passed
+Then User clicks on Save button.............................................passed
+Then User gets a popup user being added with "Lopa".........................failed
+Then User accepts the popup and close the browser...........................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError: Name Is not saved correctly expected:<true> but was:<false>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:174)
+	at amazonaws.qa.StepDefinitions.PoliticianPageSteps.user_gets_a_popup_user_being_added_with(PoliticianPageSteps.java:47)
+	at ✽.Then User gets a popup user being added with "Lopa"(C:/Users/44744/eclipse-workspace/AmazonAwsBDDFramework/src/main/java/amazonaws/qa/features/addPoliticians.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="Create Politician Test" name="Validate Politician getting Created 3" time="5.632089">
+<failure message="junit.framework.AssertionFailedError: Input Date format is wrong expected:&lt;true&gt; but was:&lt;false&gt;&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.failNotEquals(Assert.java:329)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:78)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:174)&#13;&#10;&#9;at amazonaws.qa.StepDefinitions.PoliticianPageSteps.user_enters_the_details(PoliticianPageSteps.java:35)&#13;&#10;&#9;at ✽.Then User enters the details &quot;John Doe&quot; and &quot;USA&quot; and &quot;2002/07/10&quot; and &quot;https://www.google.com/&quot; and &quot;Low&quot;(C:/Users/44744/eclipse-workspace/AmazonAwsBDDFramework/src/main/java/amazonaws/qa/features/addPoliticians.feature:7)&#13;&#10;"><![CDATA[Given User Opens browser....................................................passed
+Then User is on Registation Page............................................passed
+Then User enters the details "John Doe" and "USA" and "2002/07/10" and "https://www.google.com/" and "Low".failed
+Then User clicks on Save button.............................................skipped
+Then User gets a popup user being added with "John Doe".....................skipped
+Then User accepts the popup and close the browser...........................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError: Input Date format is wrong expected:<true> but was:<false>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:174)
+	at amazonaws.qa.StepDefinitions.PoliticianPageSteps.user_enters_the_details(PoliticianPageSteps.java:35)
+	at ✽.Then User enters the details "John Doe" and "USA" and "2002/07/10" and "https://www.google.com/" and "Low"(C:/Users/44744/eclipse-workspace/AmazonAwsBDDFramework/src/main/java/amazonaws/qa/features/addPoliticians.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="Create Politician Test" name="Validate Politician getting Created 4" time="15.681412">
+<failure message="org.openqa.selenium.NoSuchElementException: Cannot locate element with text: LARGE&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: 'LAPTOP-5EQMNKCD', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)&#13;&#10;&#9;at amazonaws.qa.pages.CreatePoliticianPage.createPolitician(CreatePoliticianPage.java:72)&#13;&#10;&#9;at amazonaws.qa.StepDefinitions.PoliticianPageSteps.user_enters_the_details(PoliticianPageSteps.java:33)&#13;&#10;&#9;at ✽.Then User enters the details &quot;Green&quot; and &quot;USA&quot; and &quot;02/07/2002&quot; and &quot;https://www.google.com/&quot; and &quot;LARGE&quot;(C:/Users/44744/eclipse-workspace/AmazonAwsBDDFramework/src/main/java/amazonaws/qa/features/addPoliticians.feature:7)&#13;&#10;"><![CDATA[Given User Opens browser....................................................passed
+Then User is on Registation Page............................................passed
+Then User enters the details "Green" and "USA" and "02/07/2002" and "https://www.google.com/" and "LARGE".failed
+Then User clicks on Save button.............................................skipped
+Then User gets a popup user being added with "Green"........................skipped
+Then User accepts the popup and close the browser...........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: LARGE
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'LAPTOP-5EQMNKCD', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at amazonaws.qa.pages.CreatePoliticianPage.createPolitician(CreatePoliticianPage.java:72)
+	at amazonaws.qa.StepDefinitions.PoliticianPageSteps.user_enters_the_details(PoliticianPageSteps.java:33)
+	at ✽.Then User enters the details "Green" and "USA" and "02/07/2002" and "https://www.google.com/" and "LARGE"(C:/Users/44744/eclipse-workspace/AmazonAwsBDDFramework/src/main/java/amazonaws/qa/features/addPoliticians.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="Create Politician Test" name="Validate Politician getting Created 5" time="15.626092">
+<failure message="junit.framework.AssertionFailedError: Name Is not saved correctly expected:&lt;true&gt; but was:&lt;false&gt;&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.failNotEquals(Assert.java:329)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:78)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:174)&#13;&#10;&#9;at amazonaws.qa.StepDefinitions.PoliticianPageSteps.user_gets_a_popup_user_being_added_with(PoliticianPageSteps.java:47)&#13;&#10;&#9;at ✽.Then User gets a popup user being added with &quot;Yellow&quot;(C:/Users/44744/eclipse-workspace/AmazonAwsBDDFramework/src/main/java/amazonaws/qa/features/addPoliticians.feature:9)&#13;&#10;"><![CDATA[Given User Opens browser....................................................passed
+Then User is on Registation Page............................................passed
+Then User enters the details "Yellow" and "xyz" and "02/07/2002" and "www://google.com/" and "Low".passed
+Then User clicks on Save button.............................................passed
+Then User gets a popup user being added with "Yellow".......................failed
+Then User accepts the popup and close the browser...........................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError: Name Is not saved correctly expected:<true> but was:<false>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:174)
+	at amazonaws.qa.StepDefinitions.PoliticianPageSteps.user_gets_a_popup_user_being_added_with(PoliticianPageSteps.java:47)
+	at ✽.Then User gets a popup user being added with "Yellow"(C:/Users/44744/eclipse-workspace/AmazonAwsBDDFramework/src/main/java/amazonaws/qa/features/addPoliticians.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="Create Politician Test" name="Validate Politician getting Created 6" time="18.267262">
+<system-out><![CDATA[Given User Opens browser....................................................passed
+Then User is on Registation Page............................................passed
+Then User enters the details "John Doe" and "xyz" and "02/07/2002" and "www://google.com/" and "Low".passed
+Then User clicks on Save button.............................................passed
+Then User gets a popup user being added with "John Doe".....................passed
+Then User accepts the popup and close the browser...........................passed
+]]></system-out>
+</testcase>
+</testsuite>
